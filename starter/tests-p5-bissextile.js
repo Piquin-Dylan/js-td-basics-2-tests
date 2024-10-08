@@ -21,3 +21,11 @@ AUTREMENT DIT :
 
 N'oubliez pas de tester votre programme avec différentes années pour vérifier qu'il fonctionne correctement.
 */
+            const year = Number(prompt("Entrez une année "))
+            const estBissextile = undefined
+            const yearB = year % 4
+if (yearB==0) {
+    alert("C est une année bissextile");
+} else {
+    alert("Ce n'est pas une année bissextile");
+}

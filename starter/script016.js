@@ -6,7 +6,13 @@
 
 // 1. Écrivez une expression ternaire pour afficher "John boit des bières" ou "John boit des jus" selon qu'il est majeur ou pas.
 // 2. Testez en changeant l'âge de John (14 ans, 24 ans)
-
+//const age = "14"
+//const firstname = "john"
+//if (age <= 14){
+  //  console.log(`${firstname} boit des jus`)
+//}else if (age >=18){
+  //  console.log("John boit des bières")
+//}
 // MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou une autre valeur à une variable selon qu'une condition est remplie ou pas
 // 1. Affectez, selon qu'on est majeur ou pas, la valeur "bières" ou la valeur "jus" à la variable drink
 // 2. Afficher "John boit des …" (l'affichage s'adapte à l'âge de John, tester différents cas)
@@ -24,6 +30,22 @@
 //   - dans tous les autres cas, "John fait autre chose"
 // 3. Testez les différents cas de figure en changeant la profession de John
 
+//const job = "chauffeur"
+  //  switch (job){
+    //    case "instituteur":
+      //      console.log("John enseigne la programmation aux enfants")
+       // break;
+       // case "chauffeur":
+         //   console.log("John conduit un taxi à Lisbonne")
+       // break;
+       // case  "designer":
+         //   console.log("John conçoit de beaux sites web")
+       // break;
+      //  default:
+        //    console.log("John fait autre chose")
+   // }
+
+
 // 1. John a vielli : il a à présent 56 ans…
 // 2. Utilisez un switch pour affciher :
 //   - si l'âge est inférieur à 13, "John est un garçon",
@@ -32,6 +54,23 @@
 //   - et sinon "John est un homme".
 // 3. Testez les différents cas de figure en changeant l'âge de John
 // 4. Testez avec un âge de 7 ans en enlevant la 2e instruction break pour voir ce que cela a comme impact
+
+    //const age = 14
+    //const firstname = "john"
+
+      //  switch (true){
+        //    case (age >= 13 && age <=20):
+          //      console.log("John est un garçon")
+           // break;
+           // case age >=20 && age <= 30:
+             //   console.log("John est un jeune homme")
+           // break;
+           // default:
+             //   console.log("john est un homme")
+
+       // }
+
+
 
 // Autre application de l'instruction switch
 // 1. Demandez à l'utilisateur d'entrer l'information
@@ -45,11 +84,46 @@
 //    e) dans tous les autres cas (si la personne n'a rien répondu de tout ça
 //     — c.-à-d. qu'elle n'a entré aucun de ces qautre mots-là),
 //     affichez "Je n'ai pas compris !"
+     //   const meteo = prompt("Quel temps fait-il dehors")
+     //   switch (meteo){
+     //       case "soleil":
+     //           console.log("Sortez en t-shirt.")
+     //           break;
+     //       case "vent":
+     //           console.log("Sortez en pull.")
+     //           break;
+     //       case "pluie":
+     //           console.log("Restez au chaud à la maison")
+     //           break;
+     //       default :
+     //           console.log("Je n'ai pas compris !")
+     //   }
+
 
 // b) Switch sans break
 // L'instruction `break` fait sortir du bloc du switch. On ne souhaite pas toujours sortir, dans ce cas, on peut ne pas mettre de `break`
 // 1. Demandez à l'utilisateur d'entrer le numéro du jour de la semaine
 // 2. Affichez ensuite dans la console le message suivant : "Les jours suivants se sont déjà écoulés depuis le début de la semaine : …, …, …"
+
+    const day = Number(prompt("Entrez "))
+    switch (day){
+        case 1:
+            console.log(`Les jours suivants se sont déjà écoulés depuis le début de la semaine : ${day}`)
+        case 2:
+            console.log(`Les jours suivants se sont déjà écoulés depuis le début de la semaine : ${day}`)
+        case 3:
+            console.log(`Les jours suivants se sont déjà écoulés depuis le début de la semaine : ${day}`)
+        case 4:
+            console.log(`Les jours suivants se sont déjà écoulés depuis le début de la semaine : ${day}`)
+        case 5:
+            console.log(`Les jours suivants se sont déjà écoulés depuis le début de la semaine : ${day}`)
+        case 6:
+            console.log(`Les jours suivants se sont déjà écoulés depuis le début de la semaine : ${day}`)
+        case 7:
+
+    }
+
+
 
 // Ici, toutes les instructions "console.log" entre la ligne case:… et l'instruction break seront exécutées, et on obtient donc une liste de jours. Notez bien qu'il faut quand même un break avant le default, sans quoi ce message d'erreur apparaîtra toujours à la fin de notre liste de jours… Notez qu'on aurait pu aussi écrire le default en premier, suivi d'un break puis la liste de tous les case.
 

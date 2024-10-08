@@ -27,3 +27,30 @@ N'oubliez pas de tester votre programme avec diverses dates pour vous assurer qu
 
 Vous pouvez utiliser les exemples que vous avez fournis comme point de départ.
 */
+            const day = (prompt("Entrez le jour "))
+            const month = prompt("Entrez le mois")
+            const year =Number (prompt("Entrez une année"))
+            const maxDay = 31;
+
+                    if (day  <=31 && year % 4 === 0){
+                        console.log(`Le ${day} ${month} ${year} est  une date valide`)
+                    } else {
+                        console.log(`Le ${day} ${month} ${year} n'est pas une date valide`)
+                    }
+
+
+
+
+
+
+
+
+//  if (day <=31 ){
+//  }
+// else if (year % 4 ===0){
+//      console.log(`Le ${day} ${month} ${year} est une date valide`)
+//  }else {
+//      console.log(`Le ${day} ${month} ${year} n'est pas une date valide`)
+//  }
+
+

@@ -2,6 +2,7 @@
 
 /*
 1. Stockez le jour actuel (nom du jour, type texte) dans une constante.
+
 2. Écrivez des tests pour stocker dans une variable le nom du jour suivant dans chaque cas de figure :
    - Si le jour actuel est "lundi", alors le jour suivant est "mardi".
    - Si le jour actuel est "mardi", alors le jour suivant est "mercredi".
@@ -17,3 +18,22 @@
 // Exemple : si le jour actuel est "mardi", le programme devrait afficher "Demain, nous serons mercredi."
 
 // N'oubliez pas de tester votre programme avec divers jours de la semaine.
+//bonus essayer d'utiliser un prompt en plus
+const day = prompt("Entrez un jour de la semaine")
+    if (day === "mardi"){
+        console.log("Demain, nous serons mercredi")
+    }else if (day === "mercredi"){
+        console.log("Demain, nous serons jeudi")
+    }else if (day === "jeudi"){
+        console.log("Demain, nous serons vendredi")
+    }else if (day === "vendredi"){
+        console.log("Demain, nous serons samedi")
+    }else if (day === "samedi"){
+        console.log("Demain, nous serons dimanche")
+    }else if (day === "dimanche"){
+        console.log("Demain, nous serons Lundi")
+    }else if (day === "lundi"){
+        console.log("Demain, nous serons mardi")
+    }else{
+        console.log("Erreur : jour non reconnu!")
+    }

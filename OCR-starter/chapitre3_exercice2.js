@@ -11,3 +11,13 @@
 // Exemple : si la moyenne du candidat est de 11, le programme devrait afficher "Le candidat est reçu."
 
 // N'oubliez pas de tester votre programme avec différentes moyennes pour couvrir tous les cas de figure.
+
+
+const moyenne = Number(prompt("Entrez votre moyenne"))
+    if (moyenne < 10){
+        console.log(`Le candidat est recalé sa moyenne est de ${moyenne}`)
+    }else if (10 <= moyenne && 12 > moyenne ){
+        console.log(`Le candidat est recu sa moyenne est de  ${moyenne}`)
+    }else if (12 <= moyenne){
+        console.log(`Le candidat est reçu avec mention sa moyenne est de ${moyenne}`)
+    }
